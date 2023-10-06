@@ -6,7 +6,7 @@ def main(page: ft.Page):
     lbl_ola = ft.Text()
 
     def click(e):
-        lbl_ola.value=f'Olá...{txt_nome.value}!'
+        lbl_ola.value=f'Olá... {txt_nome.value}!'
         page.update()
 
     row = ft.Row(controls=[
@@ -16,4 +16,4 @@ def main(page: ft.Page):
     ])
     page.add(row)
 
-ft.app(target=main)
+ft.app(target=main, view=ft.WEB_BROWSER)
