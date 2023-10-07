@@ -7,7 +7,7 @@ def main(page: ft.Page):
 
     for i in range(5100):
         lv.controls.append(ft.Text(f"Line {i}"))
-        if i % 500 == 0:
+        if i % 100 == 0:
             page.update()
     page.update()
 
