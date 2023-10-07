@@ -4,11 +4,11 @@ import flet as ft
 os.environ["FLET_WS_MAX_MESSAGE_SIZE"] = "8000000"
 
 def main(page: ft.Page):
-    r = ft.Row(wrap=True, scroll="always", expand=True)
-    page.add(r)
+    row = ft.Row(wrap=True, scroll="always", expand=True)
+    page.add(row)
 
     for i in range(5000):
-        r.controls.append(
+        row.controls.append(
             ft.Container(
                 ft.Text(f"Item {i}"),
                 width=100,
